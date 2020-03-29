@@ -1,21 +1,24 @@
 html {
   box-sizing: border-box;
   width: 100vw;
+  display: flex;
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-size: 18px;
   font-size: 100%;
+  height: 100vh;
+
 }
 
 #main_pic {
   background-image: url("images/Tassel_HomePage838x480.png");
-  border: 3px solid red;
+  height: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+
 }
 
 .logo {
@@ -23,7 +26,7 @@ body {
   margin-top: 1px;
 }
 
-.bkgd_dkGrey {
+.bkgd_dkMaroon {
   display: flex;
   background-color: #430402;
 }
@@ -42,26 +45,26 @@ body {
 
 section {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  grid-gap: 20px;
-  margin: 10px;
+  grid-gap: 9px 14px;
+  padding: 20px;
 }
 
 .card img {
   width: 100%;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 360px) {
   section {
-    column-count: 2;
-
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* @media screen and (max-width: 560px) {
+@media screen and (min-width: 560px) {
   section {
     display: grid;
-
+    grid-template-columns: repeat(4, 1fr);
   }
-} */
+}
