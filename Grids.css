@@ -1,11 +1,10 @@
 html {
-  margin: 0 auto;
   width: 100vw;
-  /* display: flex; */
   padding: 0;
 }
 
 body {
+  margin: 0 auto;
   box-sizing: border-box;
   font-size: 18px;
   font-size: 100%;
