@@ -32,15 +32,18 @@ body {
 }
 
 .main_title {
-  margin: 50px;
+  align-self: center;
+  margin: 0px 9px 0px 20px;
   color: #fff;
-  font-size: 2em;
+  font-variant: small-caps;
+  font-size: 1em;
 }
 
 .main_text {
-  font-size: 1.25em;
+  font-size: .75em;
   color: white;
   padding: 20px;
+  margin: 0;
 }
 
 section {
@@ -63,6 +66,13 @@ section {
 }
 
 @media screen and (min-width: 560px) {
+  section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 780px) {
   section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
